@@ -53,6 +53,6 @@ vim.cmd [[ set expandtab ]]
 vim.cmd [[ set shiftwidth=2 ]]
 vim.cmd [[ set tabstop=2 ]]
 
-require "lua.config.keybinds"()
-require "lua.config.completion"
-require "lua.config.configure-lsps"
+require "config.keybinds"()
+require "config.completion"
+require "config.configure-lsps"

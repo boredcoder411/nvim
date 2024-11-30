@@ -69,7 +69,7 @@ return {
   {
     "goolord/alpha-nvim",
     config = function()
-      require "lua.config.greeter-theme"
+      require "config.greeter-theme"
     end,
   },
   {
