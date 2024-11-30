@@ -37,3 +37,4 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
+lspconfig.clangd.setup({})
