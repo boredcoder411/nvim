@@ -1,7 +1,13 @@
+require("mason").setup()
+
 local lspconfig = require "lspconfig"
+
 lspconfig.asm_lsp.setup {}
+
 lspconfig.clangd.setup {}
+
 lspconfig.ruff.setup {}
+
 lspconfig.lua_ls.setup {
   on_init = function(client)
     client.config.settings.Lua = vim.tbl_deep_extend("force", client.config.settings.Lua, {
@@ -27,7 +33,9 @@ lspconfig.lua_ls.setup {
     Lua = {},
   },
 }
+
 lspconfig.zls.setup {}
+
 lspconfig.rust_analyzer.setup {
   settings = {
     ["rust-analyzer"] = {
@@ -37,4 +45,5 @@ lspconfig.rust_analyzer.setup {
     },
   },
 }
+
 lspconfig.clangd.setup({})

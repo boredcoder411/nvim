@@ -10,4 +10,5 @@ return function()
 
   vim.keymap.set("n", "<leader><Tab>", ":BufferNext<CR>", { noremap = true, silent = true })
   vim.keymap.set("n", "<leader>w", ":BufferClose<CR>", { noremap = true, silent = true })
+  vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open parent directory" })
 end
