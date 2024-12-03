@@ -32,15 +32,7 @@ require("lazy").setup {
   rocks = { enabled = false },
 }
 
-require("make").setup {}
-
 require("gitsigns").setup {}
-
---require('nvim-treesitter.configs').setup {
---  ensure_installed = { "zig" },
---  highlight = { enable = true },
---}
-
 require("lualine").setup {
   options = {
     theme = "lackluster",
@@ -52,7 +44,3 @@ vim.cmd [[ set rnu ]]
 vim.cmd [[ set expandtab ]]
 vim.cmd [[ set shiftwidth=2 ]]
 vim.cmd [[ set tabstop=2 ]]
-
-require "config.keybinds"()
-require "config.completion"
-require "config.configure-lsps"
