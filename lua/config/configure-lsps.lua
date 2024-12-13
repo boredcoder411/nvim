@@ -47,3 +47,5 @@ lspconfig.rust_analyzer.setup {
 }
 
 lspconfig.svelte.setup {}
+
+lspconfig.gopls.setup{}

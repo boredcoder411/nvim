@@ -11,14 +11,5 @@ return {
         realname = "nirc",
       })
     end
-  },
-  {
-    dir = "~/share-nvim-plugin"
-  },
-  {
-    dir = "~/live_edit",
-    config = function()
-      require("live_edit").setup()
-    end
   }
 }
