@@ -35,7 +35,7 @@ require("lazy").setup {
 require("gitsigns").setup {}
 require("lualine").setup {
   options = {
-    theme = "lackluster",
+    theme = "kanagawa",
   },
 }
 
