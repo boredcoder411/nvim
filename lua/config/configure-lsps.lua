@@ -2,8 +2,6 @@ require("mason").setup()
 
 local lspconfig = require "lspconfig"
 
-lspconfig.asm_lsp.setup {}
-
 lspconfig.clangd.setup {}
 
 lspconfig.ruff.setup {}
@@ -34,8 +32,6 @@ lspconfig.lua_ls.setup {
   },
 }
 
-lspconfig.zls.setup {}
-
 lspconfig.rust_analyzer.setup {
   settings = {
     ["rust-analyzer"] = {
@@ -46,6 +42,6 @@ lspconfig.rust_analyzer.setup {
   },
 }
 
-lspconfig.svelte.setup {}
-
 lspconfig.gopls.setup{}
+
+lspconfig.svelte.setup {}
