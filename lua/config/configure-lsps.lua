@@ -41,3 +41,5 @@ vim.lsp.enable("rust_analyzer")
 vim.lsp.enable("gopls")
 
 vim.lsp.enable("svelte")
+
+vim.lsp.enable("nimls")
