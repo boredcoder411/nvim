@@ -43,3 +43,5 @@ vim.lsp.enable("gopls")
 vim.lsp.enable("svelte")
 
 vim.lsp.enable("nimls")
+
+vim.lsp.enable("zls")
