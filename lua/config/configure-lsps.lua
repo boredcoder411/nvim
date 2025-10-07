@@ -1,8 +1,8 @@
 require("mason").setup()
 
-vim.lsp.enable("clangd")
+vim.lsp.enable "clangd"
 
-vim.lsp.enable("ruff")
+vim.lsp.enable "ruff"
 
 vim.lsp.config["lua_ls"] = {
   on_init = function(client)
@@ -25,7 +25,7 @@ vim.lsp.config["lua_ls"] = {
     Lua = {},
   },
 }
-vim.lsp.enable("lua_ls")
+vim.lsp.enable "lua_ls"
 
 vim.lsp.config["rust_analyzer"] = {
   settings = {
@@ -36,12 +36,20 @@ vim.lsp.config["rust_analyzer"] = {
     },
   },
 }
-vim.lsp.enable("rust_analyzer")
+vim.lsp.enable "rust_analyzer"
 
-vim.lsp.enable("gopls")
+vim.lsp.enable "gopls"
 
-vim.lsp.enable("svelte")
+vim.lsp.enable "svelte"
 
-vim.lsp.enable("nimls")
+vim.lsp.enable "nimls"
 
-vim.lsp.enable("zls")
+vim.lsp.enable "zls"
+
+vim.diagnostic.config {
+  underline = false,
+  virtual_text = {
+    spacing = 2,
+  },
+  update_in_insert = false,
+}
