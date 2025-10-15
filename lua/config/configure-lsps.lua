@@ -46,6 +46,11 @@ vim.lsp.enable "nimls"
 
 vim.lsp.enable "zls"
 
+vim.lsp.config["sourcekit"] = {
+  filetypes = { "swift", "objc", "objcpp" }
+}
+vim.lsp.enable "sourcekit"
+
 vim.diagnostic.config {
   underline = false,
   virtual_text = {
